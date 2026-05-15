@@ -14,7 +14,7 @@ const RepairsPreview = () => {
             </p>
         
             <div className="flex flex-col ">
-            { repairs.map((item, index) => (
+            { repairs.slice(0, 3).map((item, index) => (
                 <RepairsCard 
                     key={index}
                     id={item.id}
