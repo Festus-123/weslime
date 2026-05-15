@@ -4,7 +4,7 @@ import RepairsCard from "@/components/repairs-card/RepairsCard";
 
 const Repairs = () => {
     return (
-        <section className="h-screen flex flex-col gap-10 bg-[#141414] text-white/40">
+        <section className="h-full flex flex-col gap-10 bg-[#141414] text-white/40">
 
             <p className="text-lg flex items-center gap-2 mt-20 p-4 md:p-16">
                 <span className="w-16 h-0.5 bg-white/40"></span>

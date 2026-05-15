@@ -65,6 +65,7 @@ const Service = () => {
             <Image
               src={service.img}
               alt={service.title}
+              loading="lazy"
               className="w-full h-full object-cover object-center rounded-xl brightness-80"
             />
             <div className="flex flex-col gap-4">

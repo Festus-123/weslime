@@ -15,7 +15,7 @@ const Footer = () => {
 
     return (
         <footer
-            className="bg-[#141414] text-white/40  border-t border-white/10"
+            className="bg-[#141414] text-white/40  border-t border-white/10 overflow-hidden"
         >
             <div className="flex flex-col gap-10 p-4 md:p-16">
                 <h1 className=" font-medium text-white/40 text-lg md:text-3xl tracking-wide">
@@ -23,19 +23,18 @@ const Footer = () => {
                     <span className="font-medium text-white">Auto Repairs</span>
                 </h1>
 
-                <div className="w-full flex flex-wrap gap- p-2 md:p-8">
+                <div className="w-full flex flex-wrap gap-10 p-2 md:p-8">
                     <aside className="flex flex-col gap-3 grow">
                         <h2 className="text-lg">Services an About</h2>
                         <p className="w-full max-w-xl text-justify">We provide a wide range of car services to meet all your automotive
                             needs, including professional car repair, thorough car washing and
                             detailing, and high-quality car parts sales, ensuring that your vehicle
                             receives the best care and maintenance for optimal performance and
-                            longevity, all delivered with exceptional customer service and expertise
-                            to keep your car running smoothly and looking its best.</p>
+                            longevity..</p>
                     </aside>
 
                     <aside
-                     className="flex flex-col gap-3 grow">
+                     className=" w-full md:w-auto flex flex-col gap-3 grow">
                         <h2 className="text-lg">Contact Info</h2>
                         <p>Email: info@weslimeautorepairs.com</p>
                         <p>Phone: (123) 456-7890</p>
@@ -44,7 +43,7 @@ const Footer = () => {
                         <p>linkedin: linkedin.com/in/weslimeautorepairs</p>
                     </aside>
 
-                    <aside className="flex flex-col gap-3 grow">
+                    <aside className="-full md:w-auto flex flex-col gap-3 grow">
                         <h2 className="text-lg">Quick Links</h2>
                         <ul className={`flex flex-col gap-2`}>
                             { links.map((item, index) => (
@@ -62,7 +61,7 @@ const Footer = () => {
 
             </div>
             <div className="w-full h-full flex items-center justify-center p-4 md:p-16 border-t border-white/20">
-                <p className="text-sm md:text-base tracking-wide">
+                <p className="text-sm md:text-base tracking-wide text-center">
                     &copy; {new Date().getFullYear()} Mechanic Services. All rights reserved.
                 </p>
             </div>

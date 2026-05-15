@@ -9,7 +9,7 @@ const ServicePreview = () => {
         <span className="w-20 h-0.5 bg-white/40"></span>
         <span className="italic text-white/40">We Offer</span>
       </p>
-      <h1 className="text-white/60 text-xl md:text-3xl tracking-wide leading-normal text-justify">
+      <h1 className="text-white/60 text-xl md:text-3xl tracking-wide leading-normal text-justify p-4">
         We provide a wide range of car services to meet all your automotive
         needs, including professional car repair, thorough car washing and
         detailing, and high-quality car parts sales, ensuring that your vehicle
@@ -18,7 +18,7 @@ const ServicePreview = () => {
         to keep your car running smoothly and looking its best.
       </h1>
 
-      <div className="w-full grid grid-cols-3 gap-10 p-4 md:p-16">
+      <div className="w-full grid grid-cols-1 md:grid-cols-3 gap-10 p-4 md:p-16">
         <ServiceCard
           img={images.car_repair2}
           title="Car Repair"
