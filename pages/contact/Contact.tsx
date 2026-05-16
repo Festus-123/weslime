@@ -28,6 +28,7 @@ const Contact = () => {
       });
 
       const data = await res.json();
+      
 
       if (data.success) {
         setLoading(false)
@@ -61,14 +62,10 @@ const Contact = () => {
             loading="lazy"
             className="w-full h-auto"
           />
-          <div className="absolute h-full flex items-center justify-center inset-0 bg-black/60 text-white/80 p-4 md:p-8 ">
-            <ul className="w-full line-clamp-2 sm:line-clamp-4 md:line-clamp-none text-lg sm:text-xl md:text-2xl italic font-bold tracking-wider">
-              <li>Fill in your details</li>
-              <li>Enter your message, which service you require</li>
-              <li>Click on send </li>
-              <li>Get response withn 24 hours</li>
-              <li>Thank you.</li>
-            </ul>
+          <div className="absolute h-full flex items-center justify-center inset-0 bg-black/60 text-white/80 p-4 md:p-8 tracking-wider">
+            <p>
+              Your message will be responded to within 24 hrs --
+            </p>
           </div>
         </div>
 

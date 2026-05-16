@@ -2,6 +2,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
+import { HiMenuAlt3, HiX } from "react-icons/hi";
 
 export type LINKS = {
     href: string;
@@ -28,9 +29,14 @@ const Navbar = () => {
 
             {/* Links for mobile */}
             { show && (
-                <div className="md:hidden absolute left-0 top-full w-full h-full flex flex-col gap-4 bg-blaxk/40 p-8 text-xl">
+                <div className="md:hidden absolute left-0 top-full bg-[#141414] w-full h-screen flex flex-col justify-evenly items-end bg-blaxk/40 p-8 text-3xl transition-all duration-700 ease-in-out">
                     {links.map((item, index) => (
                         <Link
+                            onClick={() => {
+                                setTimeout(() => {
+                                    setShow(false)
+                                }, 1000)
+                            }}
                             key={index}
                             href={item.href}
                             className={`${pathname === item.href ? "text-blue-600" : "text-white"}`}>
@@ -50,7 +56,15 @@ const Navbar = () => {
                         {item.name}
                     </Link>
                 ))}
+            </div>
 
+            {/* Control mobile nav */}
+            <div className="md:hidden">
+                <button 
+                    onClick={() => setShow(!show)}
+                    className=" text-white/90 text-3xl transition-all duration-200">
+                    { !show ? <HiMenuAlt3 /> : <HiX />}
+                </button>
             </div>
         </div>
     );
