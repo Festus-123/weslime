@@ -33,30 +33,51 @@ export const repairs: REPAIRS[] = [
     },
     {
         id: 4,
-        img: images.car_repair1,
-        title: "Lamborghini Aventador repair",
-        description: "Repaired a lamborghini aventador with a faulty engine and replaced the engine with a new one",
-        ref: "cost of repair was $7000 and result was perfection"
+        img: images.car_parked,
+        title: "Car parked in the wrong place",
+        description: "We towed a car that was parked in the wrong place and caused inconvenience to other customers",
+        ref: "cost of towing was $200 and result was a happy customer"
     },
     {
         id: 5,
-        img: images.car_repair3,
-        title: "Porsche 911 repair",
-        description: "Repaired a porsche 911 with a faulty engine and replaced the engine with a new one",
-        ref: "cost of repair was $4000 and result was perfection"
+        img: images.car_sales,
+        title: "Car sales",
+        description: "We sold a car that was repaired and cleaned to a customer who was looking for a good deal",
+        ref: "cost of car was $15000 and result was a happy customer"
     },
     {
         id: 6,
-        img: images.car_repair2,
-        title: "Ferrari 488 repair",
-        description: "Repaired a ferrari 488 with a faulty engine and replaced the engine with a new one",
-        ref: "cost of repair was $6000 and result was perfection"
+        img: images.car_wash2,
+        title: "Car wash and detailing",
+        description: "We did a car wash and detailing for a customer who wanted to keep his car clean and shiny",
+        ref: "cost of wash was $100 and result was a happy customer"
     },
     {
         id: 7,
-        img: images.car_wash,
-        title: "Audi R8 repair",
-        description: "Repaired an audi r8 with a faulty engine and replaced the engine with a new one",
-        ref: "cost of repair was $4500 and result was perfection"
+        img: images.car_swap,
+        title: "Car swap",
+        description: "We swapped a car that was repaired and cleaned with a customer who wanted to exchange his old car for a new one",
+        ref: "cost of swap was $5000 and result was a happy customer"
+    },
+    {
+        id: 8,
+        img: images.compound_car,
+        title: "Compound car repair",
+        description: "We repaired a compound car that was damaged in an accident and restored it to its original condition",
+        ref: "cost of repair was $8000 and result was perfection"
+    },
+    {
+        id: 9,
+        img: images.cybertruck,
+        title: "Cybertruck repair",
+        description: "We repaired a cybertruck that was damaged in a crash and fixed its body and engine",
+        ref: "cost of repair was $10000 and result was perfection"
+    },
+    {
+        id: 10,
+        img: images.car_repair1,
+        title: "Car repair and maintenance",
+        description: "We did a car repair and maintenance for a customer who wanted to keep his car in good condition",
+        ref: "cost of repair was $500 and result was a happy customer"
     }
 ]
